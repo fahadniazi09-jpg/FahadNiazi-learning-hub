@@ -3,110 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahad Akram Khan - Learning Hub</title>
+    <title>Fahad Akram Khan | Premium Learning Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; }
-        .course-card { transition: all 0.3s ease; border: 1px solid #e5e7eb; }
-        .course-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: #1e40af; }
-        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        body { font-family: 'Montserrat', sans-serif; }
+        .hero-section { background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .course-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 1px solid #f1f5f9; }
+        .course-card:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-color: #3b82f6; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; text-align: center; font-size: 35px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5); z-index: 1000; display: flex; align-items: center; justify-content: center; animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .premium-border { border: 5px solid #fbbf24; box-shadow: 0 0 30px rgba(251, 191, 36, 0.3); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-50 text-slate-900">
 
-    <header class="gradient-bg text-white py-16 px-4 text-center shadow-2xl">
-        <div class="relative inline-block">
-            <img src="my-photo.jpg" alt="Fahad Akram Khan" class="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-lg object-cover bg-slate-200">
-            <div class="absolute bottom-2 right-2 bg-green-500 w-6 h-6 rounded-full border-2 border-white"></div>
+    <header class="hero-section text-white py-24 px-6 text-center border-b-8 border-yellow-400">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative inline-block mb-8">
+                <img src="my-photo.jpg" alt="FAHAD AKRAM KHAN" class="w-48 h-48 rounded-full mx-auto premium-border object-cover bg-slate-800">
+                <div class="absolute -bottom-2 -right-2 bg-green-500 p-3 rounded-full border-4 border-slate-900 shadow-xl">
+                    <i class="fas fa-check text-white text-xl"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-tighter uppercase italic">FAHAD AKRAM KHAN</h1>
+            <p class="text-2xl md:text-3xl font-bold text-blue-400 mb-8 uppercase tracking-widest">Master of Professional Skills & Freelancing</p>
+            <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-slate-900 inline-block px-10 py-5 rounded-2xl font-black text-2xl shadow-2xl transform hover:scale-105 transition">
+                🚀 100+ PREMIUM COURSES - RS. 3000/- ONLY
+            </div>
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold mt-6">Fahad Akram Khan</h1>
-        <p class="text-xl text-blue-100 mt-2 font-medium">Professional Instructor & Freelancing Expert</p>
     </header>
 
-    <section class="container mx-auto px-4 -mt-10">
-        <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border border-slate-100">
-            <h2 class="text-2xl font-bold text-center text-blue-900 mb-6"><i class="fas fa-university mr-2"></i> Official Payment Methods</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-blue-50 p-5 rounded-xl border border-blue-100">
-                    <h3 class="font-bold text-blue-800 border-b border-blue-200 pb-2 mb-3">Mobile Wallets</h3>
-                    <p class="text-sm text-gray-600">EasyPaisa / JazzCash / SadaPay / NayaPay / UPaisa</p>
-                    <p class="text-2xl font-black text-blue-900 mt-2">0327-6175848</p>
-                    <p class="text-xs font-bold uppercase mt-1">Title: FAHAD AKRAM KHAN</p>
+    <section class="container mx-auto px-6 -mt-16 relative z-10">
+        <div class="glass-effect rounded-[3rem] shadow-2xl p-10 max-w-6xl mx-auto border-t border-white">
+            <h2 class="text-4xl font-black text-center text-slate-800 mb-12 flex items-center justify-center">
+                <span class="w-12 h-1 bg-blue-600 mr-4"></span> OFFICIAL ENROLLMENT METHODS <span class="w-12 h-1 bg-blue-600 ml-4"></span>
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="p-10 rounded-[2rem] bg-slate-900 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-10 text-8xl"><i class="fas fa-wallet"></i></div>
+                    <h3 class="text-2xl font-black mb-6 border-b border-slate-700 pb-4 tracking-wider">SADAPAY / NAYAPAY / UPAISA</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-blue-400 text-sm font-bold uppercase tracking-widest">Account Holder Name</p>
+                            <p class="text-3xl font-black uppercase tracking-tight">FAHAD AKRAM KHAN</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-400 text-sm font-bold uppercase tracking-widest">Official Account Number</p>
+                            <p class="text-4xl font-black tracking-tighter text-yellow-400 underline decoration-2">0327-6175848</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
-                    <h3 class="font-bold text-slate-800 border-b border-slate-300 pb-2 mb-3">Meezan Bank</h3>
-                    <p class="text-xs font-bold">IBAN:</p>
-                    <p class="text-sm font-mono break-all font-bold text-slate-900">PK69MEZN0077010113160130</p>
-                    <p class="text-xs mt-2 font-bold uppercase text-slate-700">Branch: Khanewal</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">Our Premium Skill Sets</h2>
-        <p class="text-center text-slate-500 mb-12">Access to over 100+ high-paying professional courses</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="course-card bg-white p-6 rounded-2xl text-center">
-                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 text-2xl"><i class="fas fa-code"></i></div>
-                <h3 class="font-bold">Web Development</h3>
-                <p class="text-sm text-gray-500 mt-2">HTML, CSS, JS, React, PHP & Python</p>
-            </div>
-            <div class="course-card bg-white p-6 rounded-2xl text-center">
-                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600 text-2xl"><i class="fas fa-bullhorn"></i></div>
-                <h3 class="font-bold">Digital Marketing</h3>
-                <p class="text-sm text-gray-500 mt-2">FB Ads, Google SEO, TikTok Marketing</p>
-            </div>
-            <div class="course-card bg-white p-6 rounded-2xl text-center">
-                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600 text-2xl"><i class="fas fa-video"></i></div>
-                <h3 class="font-bold">Video Editing</h3>
-                <p class="text-sm text-gray-500 mt-2">Premiere Pro, After Effects, CapCut</p>
-            </div>
-            <div class="course-card bg-white p-6 rounded-2xl text-center">
-                <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 text-2xl"><i class="fas fa-paint-brush"></i></div>
-                <h3 class="font-bold">Graphic Design</h3>
-                <p class="text-sm text-gray-500 mt-2">Photoshop, Illustrator, Canva Pro</p>
-            </div>
-        </div>
-        <div class="text-center mt-10">
-            <span class="bg-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm font-bold">+ 96 More Specialized Courses Available</span>
-        </div>
-    </section>
-
-    <section class="bg-slate-100 py-16 px-4">
-        <div class="container mx-auto max-w-3xl">
-            <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <div class="bg-white p-5 rounded-lg shadow-sm">
-                    <p class="font-bold text-blue-800">Q: How to get access to courses?</p>
-                    <p class="text-gray-600 mt-1">A: Simply send payment to the mentioned accounts and share screenshot on WhatsApp.</p>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow-sm">
-                    <p class="font-bold text-blue-800">Q: Will I get certificates?</p>
-                    <p class="text-gray-600 mt-1">A: Yes, all premium courses include professional certification upon completion.</p>
+                <div class="p-10 rounded-[2rem] bg-white border-2 border-slate-100 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-10 text-8xl text-red-600"><i class="fas fa-university"></i></div>
+                    <h3 class="text-2xl font-black text-slate-800 mb-6 border-b border-slate-100 pb-4 tracking-wider uppercase">Meezan Bank (Islamic)</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Account Title</p>
+                            <p class="text-2xl font-black text-slate-900">FAHAD AKRAM KHAN</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Account Number</p>
+                            <p class="text-xl font-mono font-black text-blue-600">77010113160130</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">International IBAN</p>
+                            <p class="text-sm font-mono font-black text-slate-800 break-all bg-slate-50 p-3 rounded-lg border border-slate-100 italic">PK69MEZN0077010113160130</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 px-4">
-        <h2 class="text-3xl font-bold text-center mb-10 text-slate-800">Student Testimonials</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 container mx-auto">
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 italic">"Fahad bhai's teaching style is amazing. I started earning $500/month after his SEO course." - ⭐⭐⭐⭐⭐ (Asad Ali)</div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 italic">"Highly professional content. Best value for money in Pakistan." - ⭐⭐⭐⭐⭐ (Irfan Khan)</div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 italic">"The support team is very helpful. Courses are updated and easy to follow." - ⭐⭐⭐⭐⭐ (Sana Malik)</div>
+    <section class="container mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-black text-slate-900 mb-4 tracking-tighter uppercase">Premium Skills Masterclass</h2>
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto">Get instant access to over 100+ globally recognized high-paying skill sets.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fab fa-amazon text-5xl text-orange-500 mb-6"></i><h3 class="font-black text-2xl mb-3">Amazon Mastery</h3><p class="text-slate-500 text-sm font-medium">Wholesale, Private Label, VA & Dropshipping Secrets.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fab fa-ebay text-5xl text-blue-600 mb-6"></i><h3 class="font-black text-2xl mb-3">eBay Expert</h3><p class="text-slate-500 text-sm font-medium">Product Hunting, Listing Optimization & Global Sales.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-chart-line text-5xl text-green-600 mb-6"></i><h3 class="font-black text-2xl mb-3">Binance Trading</h3><p class="text-slate-500 text-sm font-medium">Spot, Futures, Crypto Analysis & Risk Management.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fab fa-facebook text-5xl text-blue-800 mb-6"></i><h3 class="font-black text-2xl mb-3">Social Media Ads</h3><p class="text-slate-500 text-sm font-medium">Facebook, TikTok & Google Professional Ad Campaigns.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-briefcase text-5xl text-purple-600 mb-6"></i><h3 class="font-black text-2xl mb-3">Freelancing 101</h3><p class="text-slate-500 text-sm font-medium">Master Fiverr & Upwork to land high-ticket clients.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-laptop-code text-5xl text-indigo-600 mb-6"></i><h3 class="font-black text-2xl mb-3">Web Development</h3><p class="text-slate-500 text-sm font-medium">Learn Full-Stack Development from basic to expert level.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-video text-5xl text-red-600 mb-6"></i><h3 class="font-black text-2xl mb-3">Video Production</h3><p class="text-slate-500 text-sm font-medium">Adobe Premiere Pro, After Effects & Cinematic Editing.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-palette text-5xl text-pink-500 mb-6"></i><h3 class="font-black text-2xl mb-3">Graphic Design</h3><p class="text-slate-500 text-sm font-medium">Branding, UI/UX, Photoshop & Illustrator Mastery.</p></div>
+            <div class="course-card bg-white p-10 rounded-3xl text-center"><i class="fas fa-box-open text-5xl text-yellow-600 mb-6"></i><h3 class="font-black text-2xl mb-3">Product Hunting</h3><p class="text-slate-500 text-sm font-medium">Identify 7-figure winning products for E-commerce.</p></div>
+        </div>
+        <div class="text-center mt-16">
+            <div class="inline-block bg-blue-900 text-white px-8 py-4 rounded-full font-black text-lg shadow-xl uppercase tracking-widest">
+                And 91+ more professional courses waiting for you!
+            </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-12 text-center">
-        <div class="flex justify-center space-x-8 mb-8">
-            <a href="https://wa.me/923276175848" class="text-4xl hover:text-green-400"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61588293487358" class="text-4xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+    <section class="bg-slate-900 text-white py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-16 uppercase italic underline decoration-blue-500 underline-offset-8">Common Questions & Inquiries</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                    <p class="text-blue-400 font-black text-lg mb-3 uppercase tracking-tighter">Q1: How do I get access?</p>
+                    <p class="text-slate-300 font-medium leading-relaxed">After sending payment to our official accounts (SadaPay/NayaPay/Bank), simply share the screenshot on WhatsApp. You will receive instant access.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                    <p class="text-blue-400 font-black text-lg mb-3 uppercase tracking-tighter">Q2: Is the access permanent?</p>
+                    <p class="text-slate-300 font-medium leading-relaxed">Yes! You get lifetime access to all 100+ premium courses including future updates without any additional monthly charges.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                    <p class="text-blue-400 font-black text-lg mb-3 uppercase tracking-tighter">Q3: Certification details?</p>
+                    <p class="text-slate-300 font-medium leading-relaxed">Upon completion of any course, you will be awarded an official certificate from FAHAD AKRAM KHAN ACADEMY to boost your resume.</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                    <p class="text-blue-400 font-black text-lg mb-3 uppercase tracking-tighter">Q4: Is there any mentorship?</p>
+                    <p class="text-slate-300 font-medium leading-relaxed">Absolutely! Our dedicated support group on WhatsApp provides 24/7 technical help for all our enrolled students.</p>
+                </div>
+            </div>
         </div>
-        <p class="text-xl font-bold">Fahad Akram Khan</p>
-        <p class="text-slate-400 mt-2">Contact: 0327-6175848</p>
-        <p class="text-xs text-slate-600 mt-10">© 2026 Learning Hub. All rights reserved.</p>
+    </section>
+
+    <section class="py-24 px-6 bg-white overflow-hidden relative">
+        <h2 class="text-5xl font-black text-center mb-20 text-slate-900 tracking-tighter">SUCCESS STORIES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto relative z-10">
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200">
+                <div class="text-yellow-400 text-xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"Amazon course ne meri freelancing career ko naya rasta dikhaya. Earning start ho gayi hai!"</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Zeeshan Ali</div>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200 shadow-xl scale-105">
+                <div class="text-yellow-400 text-xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"Binance aur Crypto trading ke itne asaan lecture kahin nahi milte. Shukriya Fahad bhai!"</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Hamza Raza</div>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200">
+                <div class="text-yellow-400 text-xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"Best investment for future. Graphic design seekh kar ab main client projects handle kar raha hun."</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Kamran Khan</div>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200">
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"eBay hunting course amazing tha. Bohat he detailed lectures hain."</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Bilal Ahmed</div>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200 shadow-sm">
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"3000 mein ye khazana hai. Every student must join."</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Maria Malik</div>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] relative border border-slate-200">
+                <p class="text-slate-700 font-bold text-lg italic mb-6">"Fiverr aur Upwork ki profiles banana ab mere liye asaan hai."</p>
+                <div class="font-black text-blue-900 uppercase tracking-widest">— Irfan Jameel</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-20 text-center border-t-8 border-blue-600">
+        <div class="flex justify-center space-x-12 mb-12">
+            <a href="https://wa.me/923276175848" class="text-6xl hover:text-green-400 transition transform hover:scale-125"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61588293487358" class="text-6xl hover:text-blue-500 transition transform hover:scale-125"><i class="fab fa-facebook"></i></a>
+        </div>
+        <h2 class="text-4xl font-black mb-4 uppercase italic tracking-tighter">FAHAD AKRAM KHAN</h2>
+        <p class="text-blue-400 font-black text-2xl mb-8 tracking-widest">OFFICIAL ACADEMY PORTAL</p>
+        <div class="max-w-md mx-auto h-px bg-slate-800 mb-8"></div>
+        <p class="text-slate-500 font-bold uppercase tracking-widest mb-2">WhatsApp for Business: 0327-6175848</p>
+        <p class="text-xs text-slate-700 mt-12 font-bold uppercase">&copy; 2026 FAHAD AKRAM KHAN ACADEMY. SECURING YOUR FUTURE WITH SKILLS.</p>
     </footer>
 
     <a href="https://wa.me/923276175848" class="whatsapp-float">
